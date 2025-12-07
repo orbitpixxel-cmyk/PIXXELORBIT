@@ -124,8 +124,8 @@ export default function Page() {
           <h3 className="text-2xl font-semibold tracking-tight">Let’s scope your project</h3>
           <p className="mt-2 text-sm text-zinc-600">Share your goals— we’ll reply with a simple plan, timeline, and pricing.</p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <a href="/pages/Contact" className="inline-flex items-center rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/70">Get a proposal</a>
-            <a href="/pages/About" className="inline-flex items-center rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/70">About us</a>
+            <a href="/Contact" className="inline-flex items-center rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/70">Get a proposal</a>
+            <a href="/About" className="inline-flex items-center rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/70">About us</a>
           </div>
         </div>
         </Reveal>

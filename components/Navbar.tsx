@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { name: "Home", href: "/pages/Home" },
-  { name: "About", href: "/pages/About" },
-  { name: "Works", href: "/pages/Works" },
-  { name: "Contact", href: "/pages/Contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/About" },
+  { name: "Works", href: "/Works" },
+  { name: "Contact", href: "/Contact" },
 ];
 
 export default function Navbar() {
@@ -56,7 +56,7 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link href="/pages/Home" className="inline-flex items-center gap-2 text-base font-semibold tracking-tight md:text-lg">
+          <Link href="/" className="inline-flex items-center gap-2 text-base font-semibold tracking-tight md:text-lg">
             <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-br from-indigo-500 to-sky-400" aria-hidden="true" />
             <span className="text-zinc-900">PIXXELORBIT</span>
           </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
 
           <div className="hidden items-center gap-3 md:flex">
             <Link
-              href="/pages/Contact"
+              href="/Contact"
               aria-label="Let's Talk"
               className="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-4 py-2 text-sm font-medium text-white shadow-sm ring-1 ring-zinc-900/10 transition hover:bg-zinc-800"
             >
@@ -132,7 +132,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="/pages/Contact"
+                href="/Contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-full bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
               >
