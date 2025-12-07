@@ -1,52 +1,66 @@
 import Link from "next/link";
+import LightPillar from "@/components/ui/lightpillar";
 import Reveal from "@/components/Reveal";
 
 export default function Page() {
   return (
     <div>
       <section className="relative -mt-16 flex min-h-[88svh] items-center overflow-hidden bg-hero-gradient py-24 text-white sm:py-36">
+        <LightPillar
+          topColor="#5227FF"
+          bottomColor="#FF9FFC"
+          intensity={1.0}
+          rotationSpeed={0.3}
+          glowAmount={0.005}
+          pillarWidth={3.0}
+          pillarHeight={0.4}
+          noiseIntensity={0.5}
+          pillarRotation={25}
+          interactive={false}
+          mixBlendMode="normal"
+        />
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/40 to-transparent"/>
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/40 to-transparent"/>
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/40 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/40 to-transparent" />
         </div>
         <div className="relative mx-auto max-w-7xl px-6">
           <Reveal>
-          <div className="max-w-5xl xl:max-w-6xl">
-            <p className="text-sm font-medium text-white/70">Web Development · Social Media Marketing</p>
-            <h1 className="font-ptserif mt-4 text-5xl font-semibold leading-tight tracking-tight md:text-7xl lg:text-7xl">
-              Elevating brands with strategic web solutions and performance-driven marketing
-            </h1>
+            <div className="max-w-5xl xl:max-w-6xl">
+              <p className="text-sm font-medium text-white/70">Web Development · Social Media Marketing</p>
+              <h1 className="font-ptserif mt-4 text-5xl font-semibold leading-tight tracking-tight md:text-7xl lg:text-7xl">
+                Elevating brands with strategic web solutions and performance-driven marketing
+              </h1>
 
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/pages/Contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium text-zinc-900 shadow-sm ring-1 ring-inset ring-white/20 transition hover:bg-white/90"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
-                Let's Talk
-              </Link>
-              <Link
-                href="#work"
-                className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-3 text-sm font-medium text-white/90 transition hover:bg-white/10"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22h11A2.5 2.5 0 0 0 20 19.5v-15A2.5 2.5 0 0 0 17.5 2h-11A2.5 2.5 0 0 0 4 4.5z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
-                See our work
-              </Link>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link
+                  href="/Contact"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-medium text-zinc-900 shadow-sm ring-1 ring-inset ring-white/20 transition hover:bg-white/90"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" /></svg>
+                  Let's Talk
+                </Link>
+                <Link
+                  href="#work"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-3 text-sm font-medium text-white/90 transition hover:bg-white/10"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22h11A2.5 2.5 0 0 0 20 19.5v-15A2.5 2.5 0 0 0 17.5 2h-11A2.5 2.5 0 0 0 4 4.5z" /><path d="M8 7h8M8 11h8M8 15h5" /></svg>
+                  See our work
+                </Link>
+              </div>
             </div>
-          </div>
           </Reveal>
 
           <Reveal delay={150}>
-          <div className="mt-14 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-center text-sm text-white/70">
-            <span>Trusted by teams at</span>
-            <div className="flex flex-wrap items-center gap-4">
-              <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">NEBULA</span>
-              <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">ORBITAL</span>
-              <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">QUANTA</span>
-              <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">LUMEN</span>
+            <div className="mt-14 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-center text-sm text-white/70">
+              <span>Trusted by teams at</span>
+              <div className="flex flex-wrap items-center gap-4">
+                <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">NEBULA</span>
+                <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">ORBITAL</span>
+                <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">QUANTA</span>
+                <span className="rounded-md border border-white/20 bg-white/10 px-3 py-1">LUMEN</span>
+              </div>
             </div>
-          </div>
           </Reveal>
         </div>
       </section>
@@ -122,67 +136,67 @@ export default function Page() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <Reveal>
-            <div className="group rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-800 dark:border-zinc-300 dark:bg-white dark:text-zinc-800">
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M13 3L4 14h6l-2 7 11-13h-6z" />
-                </svg>
+              <div className="group rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-800 dark:border-zinc-300 dark:bg-white dark:text-zinc-800">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M13 3L4 14h6l-2 7 11-13h-6z" />
+                  </svg>
+                </div>
+                <h3 className="mt-4 text-xl font-semibold">Performance-first</h3>
+                <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+                  Fast by default. Optimized Core Web Vitals and accessibility built in.
+                </p>
               </div>
-              <h3 className="mt-4 text-xl font-semibold">Performance-first</h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                Fast by default. Optimized Core Web Vitals and accessibility built in.
-              </p>
-            </div>
             </Reveal>
             <Reveal delay={100}>
-            <div className="group rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-800 dark:border-zinc-300 dark:bg-white dark:text-zinc-800">
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 17l6-6 4 4 7-7" />
-                  <path d="M14 5h7v7" />
-                </svg>
+              <div className="group rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-800 dark:border-zinc-300 dark:bg-white dark:text-zinc-800">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 17l6-6 4 4 7-7" />
+                    <path d="M14 5h7v7" />
+                  </svg>
+                </div>
+                <h3 className="mt-4 text-xl font-semibold">Conversion focused</h3>
+                <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+                  Clear structure, persuasive copy, analytics and tests that move the needle.
+                </p>
               </div>
-              <h3 className="mt-4 text-xl font-semibold">Conversion focused</h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                Clear structure, persuasive copy, analytics and tests that move the needle.
-              </p>
-            </div>
             </Reveal>
             <Reveal delay={200}>
-            <div className="group rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-800 dark:border-zinc-300 dark:bg-white dark:text-zinc-800">
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 7l9-4 9 4-9 4-9-4z" />
-                  <path d="M3 12l9 4 9-4" />
-                  <path d="M3 17l9 4 9-4" />
-                </svg>
+              <div className="group rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-800 dark:border-zinc-300 dark:bg-white dark:text-zinc-800">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 7l9-4 9 4-9 4-9-4z" />
+                    <path d="M3 12l9 4 9-4" />
+                    <path d="M3 17l9 4 9-4" />
+                  </svg>
+                </div>
+                <h3 className="mt-4 text-xl font-semibold">Marketing OS</h3>
+                <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+                  Content, paid ads, and reporting aligned into one simple operating system.
+                </p>
               </div>
-              <h3 className="mt-4 text-xl font-semibold">Marketing OS</h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                Content, paid ads, and reporting aligned into one simple operating system.
-              </p>
-            </div>
             </Reveal>
           </div>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
             <Reveal>
-            <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
-              <div className="text-2xl font-semibold">200ms</div>
-              <div className="text-zinc-600 dark:text-zinc-400">median LCP</div>
-            </div>
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
+                <div className="text-2xl font-semibold">200ms</div>
+                <div className="text-zinc-600 dark:text-zinc-400">median LCP</div>
+              </div>
             </Reveal>
             <Reveal delay={100}>
-            <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
-              <div className="text-2xl font-semibold">+40%</div>
-              <div className="text-zinc-600 dark:text-zinc-400">conversion rate</div>
-            </div>
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
+                <div className="text-2xl font-semibold">+40%</div>
+                <div className="text-zinc-600 dark:text-zinc-400">conversion rate</div>
+              </div>
             </Reveal>
             <Reveal delay={200}>
-            <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
-              <div className="text-2xl font-semibold">5x</div>
-              <div className="text-zinc-600 dark:text-zinc-400">average ROAS</div>
-            </div>
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm dark:border-zinc-200 dark:bg-white">
+                <div className="text-2xl font-semibold">5x</div>
+                <div className="text-zinc-600 dark:text-zinc-400">average ROAS</div>
+              </div>
             </Reveal>
           </div>
         </div>
@@ -204,7 +218,7 @@ export default function Page() {
                 <li>CMS for easy edits</li>
               </ul>
               <div className="mt-6">
-                <Link href="/pages/Service" className="text-sm font-medium text-sky-700 underline underline-offset-4 hover:text-sky-900 dark:text-sky-300">See how we work</Link>
+                <Link href="/Service" className="text-sm font-medium text-sky-700 underline underline-offset-4 hover:text-sky-900 dark:text-sky-300">See how we work</Link>
               </div>
             </div>
             <div className="rounded-xl border border-zinc-200 bg-white p-6 dark:border-zinc-200 dark:bg-white">
@@ -217,7 +231,7 @@ export default function Page() {
               </ul>
               <div className="mt-6">
                 <Link
-                  href="/pages/Contact"
+                  href="/Contact"
                   className="inline-flex items-center rounded-full border border-zinc-300 bg-white px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/60 dark:border-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100/60"
                 >
                   Book a 20‑min intro
@@ -235,13 +249,13 @@ export default function Page() {
               <h3 className="text-2xl font-semibold tracking-tight">Ready to build and grow?</h3>
               <p className="mt-2 text-zinc-600 dark:text-zinc-400">Tell us your goals and we’ll share a short plan with timelines and pricing.</p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
-                <Link href="/pages/Contact" className="inline-flex items-center rounded-full border border-zinc-300 bg-white px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/60 dark:border-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100/60">Get a proposal</Link>
-                <Link href="/pages/Service" className="inline-flex items-center rounded-full border border-zinc-300 bg-white px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/60 dark:border-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100/60">See services</Link>
+                <Link href="/Contact" className="inline-flex items-center rounded-full border border-zinc-300 bg-white px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/60 dark:border-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100/60">Get a proposal</Link>
+                <Link href="/Service" className="inline-flex items-center rounded-full border border-zinc-300 bg-white px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-100/60 dark:border-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100/60">See services</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-  </div>
+    </div>
   );
 }

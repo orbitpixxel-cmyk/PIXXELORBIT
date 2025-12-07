@@ -18,10 +18,10 @@ export default function Footer() {
             <div>
               <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-900">Company</div>
               <ul className="mt-3 space-y-2 text-sm text-zinc-600 dark:text-zinc-600">
-                <li><Link href="/pages/Home" className="hover:text-zinc-900 dark:hover:text-zinc-900">Home</Link></li>
-                <li><Link href="/pages/About" className="hover:text-zinc-900 dark:hover:text-zinc-900">About</Link></li>
-                <li><Link href="/pages/Service" className="hover:text-zinc-900 dark:hover:text-zinc-900">Services</Link></li>
-                <li><Link href="/pages/Contact" className="hover:text-zinc-900 dark:hover:text-zinc-900">Contact</Link></li>
+                <li><Link href="/Home" className="hover:text-zinc-900 dark:hover:text-zinc-900">Home</Link></li>
+                <li><Link href="/About" className="hover:text-zinc-900 dark:hover:text-zinc-900">About</Link></li>
+                <li><Link href="/Service" className="hover:text-zinc-900 dark:hover:text-zinc-900">Services</Link></li>
+                <li><Link href="/Contact" className="hover:text-zinc-900 dark:hover:text-zinc-900">Contact</Link></li>
               </ul>
             </div>
             <div>
@@ -51,11 +51,11 @@ export default function Footer() {
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-zinc-200/60 pt-6 text-sm text-zinc-600 dark:border-zinc-200/60 dark:text-zinc-600 md:flex-row">
           <div>© {new Date().getFullYear()} PIXXELORBIT. All rights reserved.</div>
           <div className="flex gap-4">
-            <Link href="/pages/Service" className="hover:text-zinc-900 dark:hover:text-zinc-900">Services</Link>
-            <Link href="/pages/About" className="hover:text-zinc-900 dark:hover:text-zinc-900">About</Link>
-            <Link href="/pages/Contact" className="hover:text-zinc-900 dark:hover:text-zinc-900">Contact</Link>
-            <Link href="/pages/Privacy" className="hover:text-zinc-900 dark:hover:text-zinc-900">Privacy</Link>
-            <Link href="/pages/Terms" className="hover:text-zinc-900 dark:hover:text-zinc-900">Terms</Link>
+            <Link href="/Service" className="hover:text-zinc-900 dark:hover:text-zinc-900">Services</Link>
+            <Link href="/About" className="hover:text-zinc-900 dark:hover:text-zinc-900">About</Link>
+            <Link href="/Contact" className="hover:text-zinc-900 dark:hover:text-zinc-900">Contact</Link>
+            <Link href="/Privacy" className="hover:text-zinc-900 dark:hover:text-zinc-900">Privacy</Link>
+            <Link href="/Terms" className="hover:text-zinc-900 dark:hover:text-zinc-900">Terms</Link>
           </div>
         </div>
       </div>
